@@ -1,0 +1,21 @@
+body {
+  width: 18rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.box .field {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.box .field label {
+  flex-grow: 1;
+}

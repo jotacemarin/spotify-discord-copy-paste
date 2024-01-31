@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Botnorrea spotify discord helper",
+  "author": "juliocemarin@outlook.com",
+  "version": "0.1.0",
+  "description": "WebExtension to help copy to clipboard a name song from spotify and open one discord channel",
+  "icons": {
+    "128": "botnorrea.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://open.spotify.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
